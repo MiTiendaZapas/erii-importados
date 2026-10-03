@@ -1,7 +1,7 @@
 {
   "_ayuda": [
     "Precios de Erii importados (tienda al público).",
-    "Zapatillas $62.000, Jordan 11 $65.000, todas las ojotas (incluidas las Mind) $45.000.",
+    "Zapatillas $62.000, niños $49.000, Jordan 11 $65.000, todas las ojotas (incluidas las Mind) $45.000.",
     "Gana la PRIMERA regla que coincide, de arriba hacia abajo. 'contains': alguna de esas palabras aparece en el nombre. 'startsWith': el nombre empieza así (también con la marca adelante).",
     "No vende por mayor: \"wholesale\": false (no se muestra nada de precio por mayor)."
   ],
@@ -9,9 +9,33 @@
   "unit": {
     "default": 62000,
     "rules": [
-      { "price": 65000, "contains": ["jordan 11", "retro 11"] },
-      { "price": 45000, "startsWith": ["mind "] },
-      { "price": 45000, "contains": ["ojota"] }
+      {
+        "price": 49000,
+        "contains": [
+          "niño",
+          "niños",
+          "nene"
+        ]
+      },
+      {
+        "price": 65000,
+        "contains": [
+          "jordan 11",
+          "retro 11"
+        ]
+      },
+      {
+        "price": 45000,
+        "startsWith": [
+          "mind "
+        ]
+      },
+      {
+        "price": 45000,
+        "contains": [
+          "ojota"
+        ]
+      }
     ]
   },
   "overrides": {}
